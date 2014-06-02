@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
 
@@ -24,8 +25,8 @@ public class MainActivity extends Activity {
 	public void onClick(View v){
 		
 		
-		//EditText etv = (EditText)findViewById(R.id.nametext);
-		//String inputMsg = etv.getText().toString();
+		EditText etv = (EditText)findViewById(R.id.edtName);
+		String inputMsg = etv.getText().toString();
 		
 		//Randomクラスのインスタンスを作る
 		Random rnd = new Random();
@@ -54,7 +55,9 @@ public class MainActivity extends Activity {
 			break;
 		}
 		
+		intent.putExtra("name", inputMsg);
 		
+		startActivity(intent);
 		
 		
 		
