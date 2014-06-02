@@ -12,13 +12,24 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:text="今日の運勢は" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="74dp"
+        android:layout_marginBottom="162dp"
         android:text="大凶です！"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/daikyou" />
+
 </RelativeLayout>
